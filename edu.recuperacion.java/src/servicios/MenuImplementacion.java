@@ -10,7 +10,8 @@ public class MenuImplementacion implements MenuInterfaz {
 		int opcion;
 		System.out.println("#####################");
 		System.out.println("0. Cerrar menu");
-		System.out.println("1. Dar alta objeto");
+		System.out.println("1. Dar alta alumno");
+		System.out.println("2. Escribir en fichero");
 		System.out.println("#####################");
 		System.out.println("Introduzca una opcion: ");
 		opcion= sc.nextInt();
