@@ -22,7 +22,7 @@ public class Inicio {
 	static public Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
+		//Scanner sc = new Scanner(System.in);
 		MenuInterfaz mi = new MenuImplementacion();
 		FicheroInterfaz fi = new FicheroImplementacion();
 		OperativaInterfaz oi = new OperativaImplementacion();
