@@ -1,5 +1,8 @@
 package dtos;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class AlumnoDto {
 	
 	//Atributos
@@ -12,9 +15,18 @@ public class AlumnoDto {
 	String direccion="aaaaa";
 	String telefono="aaaaa";
 	String email="aaaaa";
+	LocalDate fechaNacimiento=LocalDate.now();
+	DateTimeFormatter formato= DateTimeFormatter.ofPattern("dd-MM-yyyy");
+	String fechaNacString=formato.format(fechaNacimiento);
 	
 	//Getters y setters
 	
+	public LocalDate getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+	public void setFechaNacimiento(LocalDate fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
+	}
 	public long getIdAlumno() {
 		return idAlumno;
 	}
@@ -67,7 +79,7 @@ public class AlumnoDto {
 	
 	public String toString() {
 		
-		String texto= nombreAlumno.concat(";").concat(dniAlumno).concat(";").concat(telefono);
+		String texto= nombreAlumno.concat(";").concat(dniAlumno).concat(";").concat(telefono).concat(";").concat(fechaNacString);
 		
 		return texto;
 	}

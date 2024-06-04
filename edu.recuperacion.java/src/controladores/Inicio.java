@@ -62,7 +62,7 @@ public class Inicio {
 				}
 			}catch(Exception e) {
 				
-				System.out.println("ERROR");
+				e.printStackTrace();
 				fi.ficheroLog ("ERROR");
 				
 			}
